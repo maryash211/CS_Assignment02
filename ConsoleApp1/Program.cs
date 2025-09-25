@@ -538,45 +538,42 @@ namespace ConsoleApp1
 
             #region Q25
 
-            Console.Write("Enter size of array: ");
-            int.TryParse(Console.ReadLine(), out int size);
+            // Console.Write("Enter size of array: ");
+            // int.TryParse(Console.ReadLine(), out int size);
 
-            int[] nums = new int[size];
-            Console.WriteLine("Enter elements of array: ");
-            for (int i = 0; i <= size - 1; i++)
-            {
-                int.TryParse(Console.ReadLine(), out nums[i]);
-            }
+            // int[] nums = new int[size];
+            // Console.WriteLine("Enter elements of array: ");
+            // for (int i = 0; i <= size - 1; i++)
+            // {
+            //     int.TryParse(Console.ReadLine(), out nums[i]);
+            // }
 
-            int distance = 0;
-            int max = 0;
-            int iCopy = 0;
-            int jCopy = 0;
-            for (int i = 0; i < size; i++)
-            {
-                for (int j = size - 1; j > i; j--)
-                {
-                    if (nums[j] == nums[i])
-                    {
+            // int distance = 0;
+            // int max = 0;
+            // int iCopy = 0;
+            // int jCopy = 0;
+            // for (int i = 0; i < size; i++)
+            // {
+            //     for (int j = size - 1; j > i; j--)
+            //     {
+            //         if (nums[j] == nums[i])
+            //         {
 
-                        distance = (j - i) - 1;
-                        if (distance > max)
-                        {
-                            max = distance;
-                            iCopy = i;
-                            jCopy = j;
+            //             distance = (j - i) - 1;
+            //             if (distance > max)
+            //             {
+            //                 max = distance;
+            //                 iCopy = i;
+            //                 jCopy = j;
 
-                        }
-                        break;
+            //             }
+            //             break;
 
-                    }
+            //         }
                     
-                }
-            }
-            Console.WriteLine($"Longest distance = {max} is between the {nums[iCopy]}'s of indexes {iCopy} and {jCopy}");
-
-
-
+            //     }
+            // }
+            // Console.WriteLine($"Longest distance = {max} is between the {nums[iCopy]}'s of indexes {iCopy} and {jCopy}");
 
             #endregion
 
